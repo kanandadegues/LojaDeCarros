@@ -28,8 +28,37 @@
     </header>
 
     <main>
-
-    </main>
+        <div class="formulario">
+         <h1>Cadastro de Veiculo</h1>
+         <form onsubmit="return cadastrarVeiculo()">
+            <div class="modelo">
+                <label for="modelo">Modelo</label>
+                <select name="modelo" id="modelo">
+                    <option value="null">Selecione um Modelo</option>
+                </select>
+            </div>
+            <div class="imagem">
+                <label for="imagem">Imagem</label>
+                <input type="file" name="imagem" id="imagem">
+            </div>
+            <div class="cor">
+                <label for="cor">Cor</label>
+                <input type="text" name="cor" id="cor">
+            </div>
+            <div class="km">
+                <label for="km">Kilometragem</label>
+                <input type="text" inputmode="numeri
+                " name="km" id="km">
+            </div>
+            <div class="valor">
+                <label for="valor">Preço</label>
+                <input type="text" inputmode="nu
+                " name="valor" id="valor">
+            </div>
+            <button type="submit">Cadastrar</button>
+         </form>
+        </div>
+     </main>
 
     <script src="../scripts/veiculo.js"></script>
 </body>
